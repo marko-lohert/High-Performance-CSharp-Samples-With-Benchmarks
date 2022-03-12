@@ -1,1 +1,4 @@
-﻿Console.WriteLine("High Performance CSharp Samples With Benchmarks");
+﻿using BenchmarkDotNet.Running;
+using HighPerformance.Span;
+
+BenchmarkRunner.Run<SpanVsSubstring>();
