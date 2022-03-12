@@ -3,13 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>High_Performance_CSharp_Samples_With_Benchmarks</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>Copyright (c) 2022 Marko Lohert</Copyright>
     <Description>Samples of high-performance C# code compared to slower versions + benchmarks written using BenchmarkDotNet.</Description>
     <Authors>Marko Lohert</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>..\..\LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
