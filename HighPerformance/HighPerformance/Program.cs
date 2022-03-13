@@ -5,5 +5,6 @@ using HighPerformance.Array;
 
 //BenchmarkRunner.Run<SpanVsSubstring>();
 //BenchmarkRunner.Run<ClassVsStructVsRecordVsRecordStruct>();
-BenchmarkRunner.Run<StackAllocVsRegularHeapAlloc_WithInit>();
+//BenchmarkRunner.Run<StackAllocVsRegularHeapAlloc_WithInit>();
+BenchmarkRunner.Run<IsPrefixIncrementFasterThanPostfix>();
 
