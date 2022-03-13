@@ -1,7 +1,8 @@
 ﻿using BenchmarkDotNet.Running;
-using HighPerformance.Miscellaneous;
-using HighPerformance.Span;
 using HighPerformance.Array;
+using HighPerformance.Miscellaneous;
+using HighPerformance.SIMD;
+using HighPerformance.Span;
 
 //BenchmarkRunner.Run<SpanVsSubstring>();
 //BenchmarkRunner.Run<ClassVsStructVsRecordVsRecordStruct>();
@@ -10,5 +11,6 @@ using HighPerformance.Array;
 //BenchmarkRunner.Run<ArrayPoolVsRegularArrayAllocation>();
 //BenchmarkRunner.Run<IfVsSwitch>();
 //BenchmarkRunner.Run<MemoryLocality>();
-BenchmarkRunner.Run<IntParseVsIntTryParse>();
+//BenchmarkRunner.Run<IntParseVsIntTryParse>();
+BenchmarkRunner.Run<SIMDSumVsForSum>();
 
