@@ -8,5 +8,6 @@ using HighPerformance.Array;
 //BenchmarkRunner.Run<StackAllocVsRegularHeapAlloc_WithInit>();
 //BenchmarkRunner.Run<IsPrefixIncrementFasterThanPostfix>();
 //BenchmarkRunner.Run<ArrayPoolVsRegularArrayAllocation>();
-BenchmarkRunner.Run<IfVsSwitch>();
+//BenchmarkRunner.Run<IfVsSwitch>();
+BenchmarkRunner.Run<MemoryLocality>();
 
