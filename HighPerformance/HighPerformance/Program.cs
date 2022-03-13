@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 using HighPerformance.Array;
+using HighPerformance.Loop;
 using HighPerformance.Miscellaneous;
 using HighPerformance.SIMD;
 using HighPerformance.Span;
@@ -12,5 +13,5 @@ using HighPerformance.Span;
 //BenchmarkRunner.Run<IfVsSwitch>();
 //BenchmarkRunner.Run<MemoryLocality>();
 //BenchmarkRunner.Run<IntParseVsIntTryParse>();
-BenchmarkRunner.Run<SIMDSumVsForSum>();
-
+//BenchmarkRunner.Run<SIMDSumVsForSum>();
+BenchmarkRunner.Run<ForeachVsFor>();
