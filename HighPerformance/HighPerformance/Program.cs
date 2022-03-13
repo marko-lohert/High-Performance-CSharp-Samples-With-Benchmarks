@@ -9,5 +9,6 @@ using HighPerformance.Array;
 //BenchmarkRunner.Run<IsPrefixIncrementFasterThanPostfix>();
 //BenchmarkRunner.Run<ArrayPoolVsRegularArrayAllocation>();
 //BenchmarkRunner.Run<IfVsSwitch>();
-BenchmarkRunner.Run<MemoryLocality>();
+//BenchmarkRunner.Run<MemoryLocality>();
+BenchmarkRunner.Run<IntParseVsIntTryParse>();
 
