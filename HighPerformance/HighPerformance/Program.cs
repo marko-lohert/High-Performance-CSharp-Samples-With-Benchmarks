@@ -14,4 +14,5 @@ using HighPerformance.Span;
 //BenchmarkRunner.Run<MemoryLocality>();
 //BenchmarkRunner.Run<IntParseVsIntTryParse>();
 //BenchmarkRunner.Run<SIMDSumVsForSum>();
-BenchmarkRunner.Run<ForeachVsFor>();
+//BenchmarkRunner.Run<ForeachVsFor>();
+BenchmarkRunner.Run<SkipLocalsInit>();
