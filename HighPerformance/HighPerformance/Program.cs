@@ -17,4 +17,5 @@ using HighPerformance.String;
 //BenchmarkRunner.Run<SIMDSumVsForSum>();
 //BenchmarkRunner.Run<ForeachVsFor>();
 //BenchmarkRunner.Run<SkipLocalsInit>();
-BenchmarkRunner.Run<StringBuilderVsStringConcatenation>();
+//BenchmarkRunner.Run<StringBuilderVsStringConcatenation>();
+BenchmarkRunner.Run<DefineListCapacity>();
