@@ -4,6 +4,7 @@ using HighPerformance.Loop;
 using HighPerformance.Miscellaneous;
 using HighPerformance.SIMD;
 using HighPerformance.Span;
+using HighPerformance.String;
 
 //BenchmarkRunner.Run<SpanVsSubstring>();
 //BenchmarkRunner.Run<ClassVsStructVsRecordVsRecordStruct>();
@@ -15,4 +16,5 @@ using HighPerformance.Span;
 //BenchmarkRunner.Run<IntParseVsIntTryParse>();
 //BenchmarkRunner.Run<SIMDSumVsForSum>();
 //BenchmarkRunner.Run<ForeachVsFor>();
-BenchmarkRunner.Run<SkipLocalsInit>();
+//BenchmarkRunner.Run<SkipLocalsInit>();
+BenchmarkRunner.Run<StringBuilderVsStringConcatenation>();
