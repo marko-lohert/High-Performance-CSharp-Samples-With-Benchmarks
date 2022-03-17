@@ -19,4 +19,5 @@ using HighPerformance.String;
 //BenchmarkRunner.Run<SkipLocalsInit>();
 //BenchmarkRunner.Run<StringBuilderVsStringConcatenation>();
 //BenchmarkRunner.Run<DefineListCapacity>();
-BenchmarkRunner.Run<ParallelForVsRegularFor_MediumSizeContentInsideLoop>();
+//BenchmarkRunner.Run<ParallelForVsRegularFor_MediumSizeContentInsideLoop>();
+BenchmarkRunner.Run<ParallelForVsRegularFor_SmallSizeContentInsideLoop>();
