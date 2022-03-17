@@ -6,7 +6,7 @@ namespace HighPerformance.Loop;
 /// Compare the difference in execution time between Parallel.For and regular for loop.
 /// In this benchmark there is medium-sized content that in executed inside every step of a loop.
 /// </summary>
-public class ParallelForVsRegularFor
+public class ParallelForVsRegularFor_MediumSizeContentInsideLoop
 {
     [Params(100, 1000, 10000, 200000)]
     public int Count { get; set; }
