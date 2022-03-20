@@ -3,6 +3,13 @@
 /// <summary>
 /// Compare the execution time of foreach loop and for loop
 /// by iterating through a List<int>.
+/// 
+/// NOTE:
+/// Ratio of execution times is not the same in a case foreach and for loops are iterating through
+///   a) array int[]
+///   b) List<int>
+/// Please, compare result of this benchmark, where data is stored in a List<int>,
+/// with the result of benchmark <see cref="ForeachVsFor_IterateThrough_Array" /> where data is stored in an array int[].
 /// </summary>
 public class ForeachVsFor_IterateThrough_List
 {
@@ -48,6 +55,13 @@ public class ForeachVsFor_IterateThrough_List
 
 
 /*
+NOTE:
+Ratio of execution times is not the same in a case foreach and for loops are iterating through
+  a) array int[]
+  b) List<int>
+Please, compare result of this benchmark, where data is stored in a List<int>,
+with the result of benchmark "ForeachVsFor_IterateThrough_Array" where data is stored in an array int[].
+
 |  Method | DataSize |             Mean |         Error |        StdDev |           Median | Ratio | RatioSD |
 |-------- |--------- |-----------------:|--------------:|--------------:|-----------------:|------:|--------:|
 | ForEach |       10 |        13.823 ns |     0.1696 ns |     0.1503 ns |        13.790 ns |  1.00 |    0.00 |
