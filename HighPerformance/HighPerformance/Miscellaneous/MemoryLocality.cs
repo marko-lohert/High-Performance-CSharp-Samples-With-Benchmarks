@@ -25,7 +25,7 @@
         }
 
         [Benchmark(Baseline = true)]
-        public void CountZerosOuterInner()
+        public void AccessArray_RowByRow()
         {
             int counter = 0;
 
@@ -39,9 +39,8 @@
             }
         }
 
-
         [Benchmark]
-        public void CountZerosInnerOuterInner()
+        public void AccessArray_JumpBetweenRows()
         {
             int counter = 0;
 
@@ -60,20 +59,20 @@
 
 
 /*
-|                    Method |  Size |            Mean |         Error |        StdDev |          Median | Ratio | RatioSD |
-|-------------------------- |------ |----------------:|--------------:|--------------:|----------------:|------:|--------:|
-|      CountZerosOuterInner |   100 |        12.60 us |      0.250 us |      0.382 us |        12.48 us |  1.00 |    0.00 |
-| CountZerosInnerOuterInner |   100 |        13.19 us |      0.260 us |      0.549 us |        12.99 us |  1.05 |    0.06 |
-|                           |       |                 |               |               |                 |       |         |
-|      CountZerosOuterInner |   500 |       305.90 us |      5.138 us |      4.555 us |       307.42 us |  1.00 |    0.00 |
-| CountZerosInnerOuterInner |   500 |       364.19 us |      6.803 us |     13.268 us |       358.38 us |  1.22 |    0.05 |
-|                           |       |                 |               |               |                 |       |         |
-|      CountZerosOuterInner |  1000 |     1,269.33 us |     14.550 us |     12.898 us |     1,263.25 us |  1.00 |    0.00 |
-| CountZerosInnerOuterInner |  1000 |     1,904.86 us |     43.874 us |    125.883 us |     1,926.07 us |  1.60 |    0.07 |
-|                           |       |                 |               |               |                 |       |         |
-|      CountZerosOuterInner |  5000 |    31,735.39 us |    289.251 us |    241.537 us |    31,831.28 us |  1.00 |    0.00 |
-| CountZerosInnerOuterInner |  5000 |   361,336.49 us |  4,224.527 us |  3,951.625 us |   360,519.40 us | 11.36 |    0.12 |
-|                           |       |                 |               |               |                 |       |         |
-|      CountZerosOuterInner | 10000 |   140,176.07 us |  2,973.082 us |  8,766.200 us |   135,380.38 us |  1.00 |    0.00 |
-| CountZerosInnerOuterInner | 10000 | 1,634,403.54 us | 31,595.545 us | 26,383.711 us | 1,629,835.90 us | 11.65 |    0.96 |
+|                      Method |  Size |            Mean |         Error |        StdDev | Ratio | RatioSD |
+|---------------------------- |------ |----------------:|--------------:|--------------:|------:|--------:|
+|        AccessArray_RowByRow |   100 |        12.59 us |      0.044 us |      0.034 us |  1.00 |    0.00 |
+| AccessArray_JumpBetweenRows |   100 |        12.87 us |      0.245 us |      0.301 us |  1.03 |    0.03 |
+|                             |       |                 |               |               |       |         |
+|        AccessArray_RowByRow |   500 |       304.24 us |      4.398 us |      4.114 us |  1.00 |    0.00 |
+| AccessArray_JumpBetweenRows |   500 |       328.45 us |      4.721 us |      4.185 us |  1.08 |    0.02 |
+|                             |       |                 |               |               |       |         |
+|        AccessArray_RowByRow |  1000 |     1,237.09 us |     24.163 us |     36.900 us |  1.00 |    0.00 |
+| AccessArray_JumpBetweenRows |  1000 |     1,738.65 us |     32.645 us |     36.284 us |  1.39 |    0.05 |
+|                             |       |                 |               |               |       |         |
+|        AccessArray_RowByRow |  5000 |    32,816.17 us |    128.020 us |    119.750 us |  1.00 |    0.00 |
+| AccessArray_JumpBetweenRows |  5000 |   386,032.43 us |  7,462.009 us |  9,437.052 us | 11.90 |    0.25 |
+|                             |       |                 |               |               |       |         |
+|        AccessArray_RowByRow | 10000 |   132,156.57 us |    325.311 us |    304.296 us |  1.00 |    0.00 |
+| AccessArray_JumpBetweenRows | 10000 | 1,701,207.87 us | 32,847.171 us | 48,146.957 us | 12.86 |    0.37 |
 */
